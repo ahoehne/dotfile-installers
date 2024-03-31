@@ -1,3 +1,4 @@
+-- luacheck: globals vim
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -5,12 +6,12 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	-- nvim-treesitter
 	use {
-	'nvim-treesitter/nvim-treesitter',
-	run = function()
-		local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-		ts_update()
-	end,
+		'nvim-treesitter/nvim-treesitter',
+		run = function()
+			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+			ts_update()
+		end,
 	}
 	-- Moonfly Theme
-	use {'bluz71/vim-moonfly-colors', as = 'moonfly'}
+	use { 'bluz71/vim-moonfly-colors', as = 'moonfly' }
 end)

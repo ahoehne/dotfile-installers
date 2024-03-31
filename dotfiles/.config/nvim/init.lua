@@ -1,10 +1,11 @@
-vim.api.nvim_command("set rnu")
+-- luacheck: globals vim
+vim.api.nvim_command("set nu rnu")
 require("plugins")
 
-require'nvim-treesitter.configs'.setup {
-	ensure_installed = { 
+require 'nvim-treesitter.configs'.setup {
+	ensure_installed = {
 		-- lamp
-		"php", "phpdoc", "sql", 
+		"php", "phpdoc", "sql",
 		-- Web
 		"html", "javascript", "jsdoc", "json",
 		-- Containers
