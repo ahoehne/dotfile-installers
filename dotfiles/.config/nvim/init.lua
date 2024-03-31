@@ -4,7 +4,7 @@ require("plugins")
 
 require 'nvim-treesitter.configs'.setup {
 	ensure_installed = {
-		-- lamp
+		-- Server Side: php/ sql
 		"php", "phpdoc", "sql",
 		-- Web
 		"html", "javascript", "jsdoc", "json",
