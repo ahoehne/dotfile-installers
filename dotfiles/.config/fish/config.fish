@@ -1,4 +1,9 @@
 function fish_prompt
+	set -l last_status $status
+	set -l stat
+	if test $last_status -ne 0
+	    set stat (set_color red)"[$last_status]"(set_color normal)
+	end
 	set_color $fish_color_cwd
 	echo -n (prompt_pwd)
 	if not set -q __fish_git_prompt_show_informative_status
@@ -24,6 +29,7 @@ function fish_prompt
 	end
 	set_color normal
 	echo -n (fish_git_prompt);
+	echo -n $stat
 	set_color normal
 	echo -n '$ '
 end
