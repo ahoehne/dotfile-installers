@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install Luacheck
-        run: sudo apt update && sudo apt install luarocks -y && luarocks install luacheck
+        run: sudo apt update && sudo apt install luarocks -y && sudo luarocks install luacheck
 
       - name: Run luacheck of dotfiles/.config/nvim/init.lua
         run: luacheck dotfiles/.config/nvim/init.lua
