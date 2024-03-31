@@ -1,3 +1,5 @@
+[![CI Luacheck](https://github.com/ahoehne/dotfile-installers/actions/workflows/luacheck.yml/badge.svg)](https://github.com/ahoehne/dotfile-installers/actions/workflows/luacheck.yml) [![CI Shellcheck](https://github.com/ahoehne/dotfile-installers/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ahoehne/dotfile-installers/actions/workflows/shellcheck.yml)
+
 # Small dotfile and installer collection
 
 ## nvim config/ installer
