@@ -45,3 +45,5 @@ end
 
 alias vi="nvim"
 alias vim="nvim"
+alias toclip="xclip -selection clipboard"
+alias toclipf="xclip -selection clipboard <"
