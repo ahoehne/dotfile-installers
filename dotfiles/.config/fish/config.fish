@@ -38,11 +38,13 @@ function fish_right_prompt -d "Write out the right prompt"
 	echo -n '['(date '+%H:%M:%S')']'
 end
 function fish_greeting
-	neofetch
+	fastfetch
 end
 
 /usr/bin/setleds -D +num 2>/dev/null
 
+alias la="ls -lah --color=auto"
+alias ls="ls --color=auto"
 alias vi="nvim"
 alias vim="nvim"
 alias toclip="xclip -selection clipboard"
