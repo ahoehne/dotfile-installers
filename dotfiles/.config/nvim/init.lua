@@ -1,5 +1,5 @@
 -- luacheck: globals vim
-vim.api.nvim_command("set nu rnu")
+vim.api.nvim_command("set nu rnu autoindent")
 require("plugins")
 
 require 'nvim-treesitter.configs'.setup {

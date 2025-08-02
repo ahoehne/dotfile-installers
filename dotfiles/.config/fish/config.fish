@@ -45,7 +45,7 @@ end
 
 alias la="ls -lah --color=auto"
 alias ls="ls --color=auto"
-alias vi="nvim"
-alias vim="nvim"
+alias vi="vim"
+alias vim="vim"
 alias toclip="xclip -selection clipboard"
 alias toclipf="xclip -selection clipboard <"
