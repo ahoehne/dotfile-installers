@@ -6,6 +6,9 @@
 Install with `./nvim.sh`
 use the vim command `:PackerSync` after first start and restart nvim
 
+## vim config/ installer
+Install with `./vim.sh`
+
 ## JetbrainsMono Nerdfont installer
 Install with `./nerdfont.sh`
 
