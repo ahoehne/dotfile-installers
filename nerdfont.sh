@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 release="v3.1.1"
 
 if [ ! -d ~/.local/share/fonts/ ]; then
@@ -9,7 +9,7 @@ if [ -d ~/.local/share/fonts/JetBrainsMono ] ; then
 	exit
 fi
 if [ -f ~/.local/share/fonts/JetBrainsMono/JetBrainsMono.tar.xz ] ; then
-	rm ~/.local/share/fonts/JetBrainsMono/etBrainsMono.tar.xz 
+	rm ~/.local/share/fonts/JetBrainsMono/etBrainsMono.tar.xz
 fi
 mkdir ~/.local/share/fonts/JetBrainsMono/
 cd ~/.local/share/fonts/JetBrainsMono/ || exit
